@@ -1,0 +1,14 @@
+.header{background:#f0f0f0;}
+iframe {
+  width: 100%;
+  min-height: 600px;
+  border: 0;
+}
+pre, code{
+  color:#007bff;
+  font-weight:600;
+  font-size:large;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+pre.result{font-weight:normal;font-size:normal;color:red;font-family:courier;}
