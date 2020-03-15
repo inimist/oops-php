@@ -49,3 +49,18 @@ class a {
 
 $x->hello();//prints Hello</pre>
 
+<h5>Autoloading classes</h5>
+
+<p>spl_autoload_register can load all the classes while creating instance of it.</p>
+
+<pre>spl_autoload_register(function ($class_name) {
+		print($class_name);
+    include $class_name . '.php';
+});
+
+$a = new MyClass1(); //MyClass1.php
+var_dump($a);
+
+$b = new MyClass2();//MyClass2.php
+var_dump($b);</pre>
+
